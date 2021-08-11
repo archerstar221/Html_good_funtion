@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>materialize</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid flex relative productService-page">
+            <div class="sidenav-overlay"></div>
+            <aside class="hide-on-med-and-down">
+                <div class="brand-sidebar flex px-15 hide-on-med-and-down">
+                    <a class="brand-logo darken-1 flex" href="index.html">
+                        <img class="my-auto" width="60px" height="auto" src="assets/images/dot_logo.png" alt="materialize logo">
+                        <!-- <span>&nbsp;&nbsp;&nbsp;Logo</span> -->
+                    </a>
+                    <a class="navbar-toggler ml-auto my-auto flex active pl-20" href="#">
+                        <i class="material-icons my-auto">radio_button_checked</i>
+                    </a>
+                </div>
+
+                <ul class="collapsible z-depth-0 scrollbar m-0" id="style-1">
+                    <li class="bold">
+                        <a class="collapsible-header waves-effect waves-cyan">
+                            <i class="fas fa-home"></i>
+                            <strong>Sistema</strong>
+                        </a>
+                    </li>
+
+                    <li class="bold dropdown-list active">
+                        <a class="collapsible-header waves-effect waves-cyan" tabindex="0">
+                            <i class="far fa-images"></i>
+                            <strong>Gestão</strong>
+                            <i class="arrow material-icons ml-auto mr-0">keyboard_arrow_down</i>
+                        </a>
+                        <div class="collapsible-body p-0">
+                          <ul class="sub-dropdown">
+                            <li class="bold">
+                                <a class="waves-effect waves-cyan" href="customer.html">
+                                    <span data-i18n="Invoice List">Customers</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)" class="waves-effect waves-cyan">
+                                    <span data-i18n="Invoice List">Providers</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="waves-effect waves-cyan" href="company.html">
+                                    <span data-i18n="Invoice List">Company</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)">
+                                    <span data-i18n="Invoice List">Taxes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)">
+                                    <span data-i18n="Invoice List">Document Series</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a class="waves-effect waves-cyan" href="productFamily.html">
+                                    <span data-i18n="Invoice List">Product Families</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="productService.html">
+                                    <span data-i18n="Invoice List">Products</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)">
+                                    <span data-i18n="Invoice List">Users App</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="customerInvoice.html">
+                                    <span data-i18n="Invoice List">Customer Invoice</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)">
+                                    <span data-i18n="Invoice List">Provider Invoice</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)">
+                                    <span data-i18n="Invoice List">Customer Receipt</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)">
+                                    <span data-i18n="Invoice List">Providers Payments</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)">
+                                    <span data-i18n="Invoice List">Internal Document - Customers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-cyan" href="javascript:void(0)">
+                                    <span data-i18n="Invoice List">Internal Document - Providers</span>
+                                </a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                    </li>
+
+                    <li class="bold">
+                        <a class="collapsible-header waves-effect waves-cyan">
+                            <i class="far fa-smile"></i>
+                            <strong>Entidades</strong>
+                        </a>
+                    </li>
+                    <li class="bold">
+                        <a class="collapsible-header waves-effect waves-cyan">
+                            <i class="far fa-comments"></i>
+                            <strong>Config</strong>
+                        </a>
+                    </li>
+                    <li class="bold">
+                        <a class="collapsible-header waves-effect waves-cyan">
+                            <i class="far fa-envelope"></i>
+                            <strong>Documentos</strong>
+                        </a>
+                    </li>
+                                     
+                </ul>
+            </aside>
+
+            <section class="w-100 dash-section1 active">
+                <header  class="flex">
+                    <div class="hide-on-med-and-down my-auto w-100">
+                        <i class="material-icons search-ico">search</i>
+                        <input class="header-search-input z-depth-2"  placeholder="Search..." type="text" name="" id="">
+                    </div>
+
+                    <div class="hide-on-large-only flex mr-0">
+                        <a class="sidenav-trigger my-auto mr-10 btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light" href="#" data-target="slide-out">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <img class="my-auto" width="60px" height="auto" src="assets/images/dot_logo.png" alt="materialize logo">
+                    </div>
+
+                    <ul class="navbar-right-list flex ml-auto">
+                        <li class="hide-on-large-only search-input-wrapper mr-20 flex">
+                            <a class="fc-white search-button flex" href="javascript:void(0);">
+                                <i class="material-icons my-auto">search</i>
+                            </a>
+                        </li>
+
+                        <li class="mr-20 flex">
+                            <a class="notification-button flex relative" href="javascript:void(0);" data-target="notifications-dropdown">
+                                <i class="material-icons my-auto fc-white">notifications_none</i>
+                                <small class="notification-badge">5</small>
+                            </a>
+                        </li>
+                        <li class="mr-20 flex">
+                            <a class="mail-button flex relative" href="javascript:void(0);" data-target="notifications-dropdown">
+                                <i class="material-icons my-auto fc-white">mail</i>
+                                <small class="notification-badge">5</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="mail-button flex relative" href="javascript:void(0);" data-target="notifications-dropdown">
+                                <img class="avatar-img2" width="38px" height="38px" src="assets/images/2.jpg" alt="">
+                                <small class="online-badge"></small>
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+
+                <main>
+                    <div class="row">
+                        <div class="col s12 flex justify-content-between mb-20 title-box1"> 
+                            <h4 class="my-auto">PRODUCT FAMILIES</h4>
+                            <div class="add_btn ml-auto mb-20">
+                                <a href="productFamilyCreate.html">
+                                    <button class="btn waves-effect waves-light">
+                                        <span class="fas fa-plus"></span>
+                                        ADD NEW
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="card">                          
+                                <div class="card-content">
+                                    <table id="proFamilyTbl" class="admin_table display highlight" cellspacing="0" width="100%">           
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Description</th>
+                                                <th>Tax</th>
+                                                <td>Tax Value</td>
+                                                <td>Is Service</td>
+                                                <td>Status</td>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>This is an apple.</td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating red lighten-2">
+                                                        <i class="far fa-times-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>25</td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating lighten-2">
+                                                        <i class="far fa-check-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating red lighten-2">
+                                                        <i class="far fa-times-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" data-target="edit_product_modal" class="btn modal-trigger waves-effect waves-light edit-btn" href="#edit_product_modal" title="Edit a series">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="btn waves-effect waves-light red lighten-2 delete-btn" title="Delete a series">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>This is a pear.</td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating red lighten-2">
+                                                        <i class="far fa-times-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>20</td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating lighten-2">
+                                                        <i class="far fa-check-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating lighten-2">
+                                                        <i class="far fa-check-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" data-target="edit_product_modal" class="btn modal-trigger waves-effect waves-light edit-btn" href="#edit_product_modal" title="Edit a series">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="btn waves-effect waves-light red lighten-2 delete-btn" title="Delete a series">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>This is a banana.</td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating red lighten-2">
+                                                        <i class="far fa-times-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>25</td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating red lighten-2">
+                                                        <i class="far fa-times-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating lighten-2">
+                                                        <i class="far fa-check-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" data-target="edit_product_modal" class="btn modal-trigger waves-effect waves-light edit-btn" href="#edit_product_modal" title="Edit a series">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="btn waves-effect waves-light red lighten-2 delete-btn" title="Delete a series">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>This is a mango.</td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating red lighten-2">
+                                                        <i class="far fa-times-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>20</td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating red lighten-2">
+                                                        <i class="far fa-times-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn waves-effect waves-light btn-floating lighten-2">
+                                                        <i class="far fa-check-circle"></i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:;" data-target="edit_product_modal" class="btn modal-trigger waves-effect waves-light edit-btn" href="#edit_product_modal" title="Edit a series">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="btn waves-effect waves-light red lighten-2 delete-btn" title="Delete a series">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>                    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    
+                </main>
+            </section>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/materialize.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="assets/js/datatable.js"></script>
+        <script src="assets/js/dataTables.responsive.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".dropify").dropify();
+            })
+        </script>
+    </body>
+</html>
